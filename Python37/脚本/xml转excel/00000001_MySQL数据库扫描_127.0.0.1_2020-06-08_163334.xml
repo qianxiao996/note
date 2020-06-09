@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<REPORT>
+    <SCANINFO FILE_ID="" MAKERS="杭州安恒信息技术股份有限公司" POLICY="3.0.7.28" SCANTASK="test" SCANTIME="" TOOLNAME="明鉴数据库安全检查工具" />
+    <SCANDATA TYPE="DB">
+        <HOST IP="127.0.0.1">
+            <PORT>3306</PORT>
+            <DBTYPE>Mysql</DBTYPE>
+            <DBVERSION />
+            <DATA>
+                <VULNERABLITY>
+                    <NAME>存在对指定的数据库上的所有表具有select权限的非root用户</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>访问控制漏洞</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>存在对指定的数据库上的所有表具有select权限的非root用户</SYNOPSIS>
+                    <DESCRIPTION>存在对指定的数据库上的所有表具有select权限的非root用户</DESCRIPTION>
+                    <SOLUTION>查看拥有该权限的用户是不是管理用户，如不是则需要通过以下语句回收该权限：&#x0A;update mysql.db set select_priv = &apos;N&apos; Where User=user_name and host = host_name;flush privileges;&#x0A;执行之前请慎重考虑&#x0A;</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server组件安全漏洞(CVE-2019-2739)</NAME>
+                    <NO CNVD="CNNVD-201907-911" CVE="CVE-2019-2739" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server: Security: Privileges子组件存在安全漏洞。攻击者可利用该漏洞未授权更新、插入或删除数据，造成拒绝服务（挂起或频繁崩溃），影响数据的完整性和可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server: Security: Privileges子组件存在安全漏洞。攻击者可利用该漏洞未授权更新、插入或删除数据，造成拒绝服务（挂起或频繁崩溃），影响数据的完整性和可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server组件安全漏洞(CVE-2019-2774)</NAME>
+                    <NO CNVD="CNNVD-201907-900" CVE="CVE-2019-2774" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Optimizer子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Optimizer子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2791)</NAME>
+                    <NO CNVD="CNNVD-201907-905" CVE="CVE-2019-2791" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>低危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Audit Plug-in子组件存在安全漏洞。攻击者可利用该漏洞未授权读取、更新、插入或删除数据，影响数据的保密性和完整性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Audit Plug-in子组件存在安全漏洞。攻击者可利用该漏洞未授权读取、更新、插入或删除数据，影响数据的保密性和完整性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2740)</NAME>
+                    <NO CNVD="CNNVD-201907-913" CVE="CVE-2019-2740" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server: XML子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server: XML子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2797)</NAME>
+                    <NO CNVD="CNNVD-201907-901" CVE="CVE-2019-2797" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Client programs子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Client programs子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server组件安全漏洞(CVE-2019-2737)</NAME>
+                    <NO CNVD="CNNVD-201907-916" CVE="CVE-2019-2737" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server : Pluggable Auth子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server : Pluggable Auth子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2741)</NAME>
+                    <NO CNVD="CNNVD-201907-903" CVE="CVE-2019-2741" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Audit Log子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Audit Log子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2778)</NAME>
+                    <NO CNVD="CNNVD-201907-904" CVE="CVE-2019-2778" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Security: Privileges子组件存在安全漏洞。攻击者可利用该漏洞未授权更新、插入或删除数据，造成拒绝服务，影响数据的完整性和可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Security: Privileges子组件存在安全漏洞。攻击者可利用该漏洞未授权更新、插入或删除数据，造成拒绝服务，影响数据的完整性和可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2758)</NAME>
+                    <NO CNVD="CNNVD-201907-907" CVE="CVE-2019-2758" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的InnoDB子组件存在安全漏洞。攻击者可利用该漏洞未授权更新、插入或删除数据，造成拒绝服务（挂起或频繁崩溃），影响数据的完整性和可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的InnoDB子组件存在安全漏洞。攻击者可利用该漏洞未授权更新、插入或删除数据，造成拒绝服务（挂起或频繁崩溃），影响数据的完整性和可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server组件安全漏洞(CVE-2019-2819)</NAME>
+                    <NO CNVD="CNNVD-201907-912" CVE="CVE-2019-2819" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server: Security: Audit子组件存在安全漏洞。攻击者可利用该漏洞未授权更新、插入或删除数据，造成拒绝服务（挂起或频繁崩溃），影响数据的完整性和可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server: Security: Audit子组件存在安全漏洞。攻击者可利用该漏洞未授权更新、插入或删除数据，造成拒绝服务（挂起或频繁崩溃），影响数据的完整性和可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2738)</NAME>
+                    <NO CNVD="CNNVD-201907-915" CVE="CVE-2019-2738" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>低危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server : Compiling子组件存在安全漏洞。攻击者可利用该漏洞未授权读取数据，影响数据的保密性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server : Compiling子组件存在安全漏洞。攻击者可利用该漏洞未授权读取数据，影响数据的保密性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2757)</NAME>
+                    <NO CNVD="CNNVD-201907-902" CVE="CVE-2019-2757" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Optimizer子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.7.26及之前版本和8.0.16及之前版本的Server: Optimizer子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server组件安全漏洞(CVE-2019-2805)</NAME>
+                    <NO CNVD="CNNVD-201907-914" CVE="CVE-2019-2805" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server: Parser子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server组件5.6.44及之前版本、5.7.26及之前版本和8.0.16及之前版本的Server: Parser子组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpujul2019-5072835.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2993)</NAME>
+                    <NO CNVD="CNNVD-201910-987" CVE="CVE-2019-2993" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>5.3</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server 5.7.27及之前版本和8.0.17及之前版本的Server: C API组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃）， 影响数据的可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server 5.7.27及之前版本和8.0.17及之前版本的Server: C API组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃）， 影响数据的可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2974)</NAME>
+                    <NO CNVD="CNNVD-201910-989" CVE="CVE-2019-2974" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>6.5</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server 5.6.45及之前版本、5.7.27及之前版本和8.0.17及之前版本的Server: Optimizer组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server 5.6.45及之前版本、5.7.27及之前版本和8.0.17及之前版本的Server: Optimizer组件存在安全漏洞。攻击者可利用该漏洞造成拒绝服务（挂起或频繁崩溃），影响数据的可用性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2969)</NAME>
+                    <NO CNVD="CNNVD-201910-991" CVE="CVE-2019-2969" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>6.2</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server 5.6.45及之前版本、5.7.27及之前版本和8.0.17及之前版本的Client programs组件存在安全漏洞。攻击者可利用该漏洞未授权访问数据，影响数据的保密性。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL中的MySQL Server 5.6.45及之前版本、5.7.27及之前版本和8.0.17及之前版本的Client programs组件存在安全漏洞。攻击者可利用该漏洞未授权访问数据，影响数据的保密性。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2960)</NAME>
+                    <NO CNVD="CNNVD-201910-995" CVE="CVE-2019-2960" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>4.9</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2948)</NAME>
+                    <NO CNVD="CNNVD-201910-999" CVE="CVE-2019-2948" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>4.9</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2938)</NAME>
+                    <NO CNVD="CNNVD-201910-1000" CVE="CVE-2019-2938" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>4.4</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2924)</NAME>
+                    <NO CNVD="CNNVD-201910-1001" CVE="CVE-2019-2924" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>5.3</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2922)</NAME>
+                    <NO CNVD="CNNVD-201910-1002" CVE="CVE-2019-2922" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>5.3</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2946)</NAME>
+                    <NO CNVD="CNNVD-201910-1003" CVE="CVE-2019-2946" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>6.5</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2923)</NAME>
+                    <NO CNVD="CNNVD-201910-1004" CVE="CVE-2019-2923" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>5.3</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2911)</NAME>
+                    <NO CNVD="CNNVD-201910-1006" CVE="CVE-2019-2911" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>2.7</CVSS>
+                    <RISK>低危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2914)</NAME>
+                    <NO CNVD="CNNVD-201910-1007" CVE="CVE-2019-2914" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>6.5</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL Server 安全漏洞(CVE-2019-2910)</NAME>
+                    <NO CNVD="CNNVD-201910-1008" CVE="CVE-2019-2910" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>3.7</CVSS>
+                    <RISK>低危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;此条漏洞编号已分配，漏洞详情即将更新。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/technetwork/security-advisory/cpuoct2019-5072832.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL 安全漏洞(CVE-2020-2574)</NAME>
+                    <NO CNVD="CNNVD-202001-631" CVE="CVE-2020-2574" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>5.9</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。 &#x0A;Oracle MySQL的MySQL客户端产品（组件：C API）中存在漏洞。受影响的受支持版本有5.6.46及以前版本、5.7.28及以前版本、8.0.18及以前版本。难以利用的漏洞允许未经身份验证的攻击者通过多个协议进行网络访问，从而危害MySQL客户端。此漏洞的成功攻击可能导致未经授权的能力导致MySQL客户端挂起或频繁重复的崩溃（完整的DOS）</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。 &#x0A;Oracle MySQL的MySQL客户端产品（组件：C API）中存在漏洞。受影响的受支持版本有5.6.46及以前版本、5.7.28及以前版本、8.0.18及以前版本。难以利用的漏洞允许未经身份验证的攻击者通过多个协议进行网络访问，从而危害MySQL客户端。此漏洞的成功攻击可能导致未经授权的能力导致MySQL客户端挂起或频繁重复的崩溃（完整的DOS）</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/security-alerts/cpujan2020.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL 安全漏洞(CVE-2020-2584)</NAME>
+                    <NO CNVD="CNNVD-202001-625" CVE="CVE-2020-2584" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>4.4</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：服务器：选项）。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。难以利用的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。成功攻击此漏洞可能导致未经授权访问关键数据或完全访问所有MySQL服务器可访问的数据</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：服务器：选项）。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。难以利用的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。成功攻击此漏洞可能导致未经授权访问关键数据或完全访问所有MySQL服务器可访问的数据</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/security-alerts/cpujan2020.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL 安全漏洞(CVE-2020-2589)</NAME>
+                    <NO CNVD="CNNVD-202001-623" CVE="CVE-2020-2589" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>4.9</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：InnoDB）。受影响的受支持版本有5.7.28及以前版本、8.0.17及以前版本。易受攻击的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可能导致未经授权的能力导致MySQL服务器挂起或频繁重复的崩溃（完全拒绝服务)。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：InnoDB）。受影响的受支持版本有5.7.28及以前版本、8.0.17及以前版本。易受攻击的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可能导致未经授权的能力导致MySQL服务器挂起或频繁重复的崩溃（完全拒绝服务)。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/security-alerts/cpujan2020.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL 安全漏洞(CVE-2020-2570)</NAME>
+                    <NO CNVD="CNNVD-202001-640" CVE="CVE-2020-2570" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>5.9</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。&#x0A;Oracle MySQL的MySQL客户端产品（组件：C API）中存在漏洞。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。难以利用的漏洞允许未经身份验证的攻击者通过多个协议进行网络访问，从而危害MySQL客户端。此漏洞的成功攻击可能导致未经授权的能力导致MySQL客户端挂起或频繁重复的崩溃（完整的DOS）</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。&#x0A;Oracle MySQL的MySQL客户端产品（组件：C API）中存在漏洞。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。难以利用的漏洞允许未经身份验证的攻击者通过多个协议进行网络访问，从而危害MySQL客户端。此漏洞的成功攻击可能导致未经授权的能力导致MySQL客户端挂起或频繁重复的崩溃（完整的DOS）</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/security-alerts/cpujan2020.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL 安全漏洞(CVE-2020-2660)</NAME>
+                    <NO CNVD="CNNVD-202001-617" CVE="CVE-2020-2660" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>4.9</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：服务器：优化器）。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。易受攻击的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可能导致未经授权的能力导致MySQL服务器挂起或频繁重复的崩溃（完整的DOS）。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：服务器：优化器）。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。易受攻击的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可能导致未经授权的能力导致MySQL服务器挂起或频繁重复的崩溃（完整的DOS）。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/security-alerts/cpujan2020.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL 安全漏洞(CVE-2020-2572)</NAME>
+                    <NO CNVD="CNNVD-202001-635" CVE="CVE-2020-2572" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>2.7</CVSS>
+                    <RISK>低危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：服务器：审核插件）。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。易受攻击的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可导致对某些MySQL服务器可访问数据的未经授权的更新、插入或删除访问。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：服务器：审核插件）。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。易受攻击的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可导致对某些MySQL服务器可访问数据的未经授权的更新、插入或删除访问。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/security-alerts/cpujan2020.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL 安全漏洞(CVE-2020-2573)</NAME>
+                    <NO CNVD="CNNVD-202001-633" CVE="CVE-2020-2573" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>5.9</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL的MySQL客户端产品（组件：C API）中存在漏洞。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。难以利用的漏洞允许未经身份验证的攻击者通过多个协议进行网络访问，从而危害MySQL客户端。此漏洞的成功攻击可能导致未经授权的能力导致MySQL客户端挂起或频繁重复的崩溃（完整的DOS）。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL的MySQL客户端产品（组件：C API）中存在漏洞。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。难以利用的漏洞允许未经身份验证的攻击者通过多个协议进行网络访问，从而危害MySQL客户端。此漏洞的成功攻击可能导致未经授权的能力导致MySQL客户端挂起或频繁重复的崩溃（完整的DOS）。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/security-alerts/cpujan2020.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL 安全漏洞(CVE-2020-2579)</NAME>
+                    <NO CNVD="CNNVD-202001-627" CVE="CVE-2020-2579" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>6.5</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：服务器：优化器）。受影响的受支持版本有5.6.46及以前版本、5.7.28及以前版本、8.0.18及以前版本。易受攻击的漏洞允许低权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可能导致未经授权的能力导致MySQL服务器挂起或频繁重复的崩溃（完全拒绝服务）。</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：服务器：优化器）。受影响的受支持版本有5.6.46及以前版本、5.7.28及以前版本、8.0.18及以前版本。易受攻击的漏洞允许低权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可能导致未经授权的能力导致MySQL服务器挂起或频繁重复的崩溃（完全拒绝服务）。</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/security-alerts/cpujan2020.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Oracle MySQL 安全漏洞(CVE-2020-2577)</NAME>
+                    <NO CNVD="CNNVD-202001-630" CVE="CVE-2020-2577" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>其他</VULTYPE>
+                    <CVSS>4.9</CVSS>
+                    <RISK>中危</RISK>
+                    <SYNOPSIS>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：InnoDB）。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。易受攻击的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可能导致未经授权的能力导致MySQL服务器挂起或频繁重复的崩溃（完全拒绝服务</SYNOPSIS>
+                    <DESCRIPTION>Oracle MySQL是美国甲骨文（Oracle）公司的一套开源的关系数据库管理系统。MySQL Server是其中的一个数据库服务器组件。 &#x0A;Oracle MySQL的MySQL服务器产品中存在漏洞（组件：InnoDB）。受影响的受支持版本有5.7.28及以前版本、8.0.18及以前版本。易受攻击的漏洞允许高权限攻击者通过多个协议进行网络访问，从而危害MySQL服务器。此漏洞的成功攻击可能导致未经授权的能力导致MySQL服务器挂起或频繁重复的崩溃（完全拒绝服务</DESCRIPTION>
+                    <SOLUTION>目前厂商已发布升级补丁以修复漏洞，补丁获取链接： &#x0A;https://www.oracle.com/security-alerts/cpujan2020.html</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>MySQL数据库存在默认的管理员账号root</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>缺省配置</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>mysql数据库的默认的管理员账号是root，这个默认的账号可能会带来一些安全风险。&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>mysql数据库的默认的管理员账号是root，这个默认的账号可能会带来一些安全风险。&#x0A;</DESCRIPTION>
+                    <SOLUTION>使用下述命令删除root用户：Delete FROM mysql.user Where User=&apos;root&apos;;flush privileges;&#x0A;执行之前请慎重考虑&#x0A;</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>存在有super权限的非root用户</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>缺省配置</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>存在有super权限的非root用户,该权限允许用户终止任何查询；修改全局变量的SET语句;使用CHANGE MASTER, PURGE MASTER LOGS等等来管理数据库。&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>存在有super权限的非root用户,该权限允许用户终止任何查询；修改全局变量的SET语句;使用CHANGE MASTER, PURGE MASTER LOGS等等来管理数据库。&#x0A;</DESCRIPTION>
+                    <SOLUTION>查看拥有该权限的用户是不是管理用户，如不是则需要通过以下语句回收该权限：&#x0A;update mysql.user set super_priv = &apos;N&apos; Where User=user_name and host = host_name;flush privileges;&#x0A;执行之前请慎重考虑&#x0A;</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>数据库版本号</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>mysql数据库版本信息&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>mysql数据库版本信息&#x0A;</DESCRIPTION>
+                    <SOLUTION>建议升级到最新版本</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>MySQL数据库安装目录</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>mysql数据库安装目录&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>mysql数据库安装目录&#x0A;</DESCRIPTION>
+                    <SOLUTION>建议不要使用默认目录安装</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>MySQL数据库应用程序的路径</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>mysql数据库应用程序的路径&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>mysql数据库应用程序的路径&#x0A;</DESCRIPTION>
+                    <SOLUTION>建议不要使用默认应用程序的路径</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>MySQL数据库ssl文件路径</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>mysql数据库ssl文件路径&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>mysql数据库ssl文件路径&#x0A;</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置SSL的值：&#x0A;set global OPENSLL_CONF = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>MySQL数据库运行日志路径</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>mysql数据库运行日志路径&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>mysql数据库运行日志路径&#x0A;</DESCRIPTION>
+                    <SOLUTION>通过修改my.cnf文件，在[mysqld]后面增加一行log=新的日志目录</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>MySQL数据库登录用户</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>mysql数据库登录用户&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>mysql数据库登录用户&#x0A;</DESCRIPTION>
+                    <SOLUTION>分析登录用户的增加、删除或者修改信息，判断操作是否为正常操作</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>服务器的主机名</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>服务器的主机名&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>服务器的主机名&#x0A;</DESCRIPTION>
+                    <SOLUTION>N/A</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>用户的最大连接数</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>MAX_USER_CONNNECTIONS参数是指单个数据库用户的最大连接数。设定MAX_USER_CONNNECTIONS参数值可以防止非法连接。推荐把MAX_USER_CONNNECTIONS的值设置为3，用户也可以根据数据库应用的数据情况设置对应的值。 值为0时不限制用户连接。&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>MAX_USER_CONNNECTIONS参数是指单个数据库用户的最大连接数。设定MAX_USER_CONNNECTIONS参数值可以防止非法连接。推荐把MAX_USER_CONNNECTIONS的值设置为3，用户也可以根据数据库应用的数据情况设置对应的值。 值为0时不限制用户连接。&#x0A;</DESCRIPTION>
+                    <SOLUTION>通过以下的命令来设置max_user_connnections参数值：&#x0A;set global max_user_connections = new_value&#x0A;或修改安装目录下的配置文件（my.ini 或 my.conf）的max_user_connnections值</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>MySQL最大连接数（max_connections）</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>MAX_CONNECTIONS参数是MySQL服务器的最大连接数。设置MAX_CONNECTIONS参数可以防止非法连接。</SYNOPSIS>
+                    <DESCRIPTION>MAX_CONNECTIONS参数是MySQL服务器的最大连接数。设置MAX_CONNECTIONS参数可以防止非法连接。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令来设置max_connections参数值：&#x0A;set global max_connections = new_value&#x0A;或修改安装目录下的配置文件（my.ini 或 my.conf）的max_connections值</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>用户权限</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>列出数据库中所有用户的权限，以供管理员分析使用。</SYNOPSIS>
+                    <DESCRIPTION>列出数据库中所有用户的权限，以供管理员分析使用。</DESCRIPTION>
+                    <SOLUTION>安全信息，供管理员查看</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>用户表授权</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>列出数据库用户表的授权情况，以供管理员分析使用。</SYNOPSIS>
+                    <DESCRIPTION>列出数据库用户表的授权情况，以供管理员分析使用。</DESCRIPTION>
+                    <SOLUTION>安全信息，供管理员查看</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>query_cache_size参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>数据库在执行SELECT语句时，会将其结果放到query cache 中，当下一次处理同样的SELECT请求时，数据库就会从query cache取得结果，而不需要去数据表中查询。&#x0A;Query cache 在一些环境是非常有用的，如表很少修改，经常会查询的情况下。 &#x0A;</SYNOPSIS>
+                    <DESCRIPTION>数据库在执行SELECT语句时，会将其结果放到query cache 中，当下一次处理同样的SELECT请求时，数据库就会从query cache取得结果，而不需要去数据表中查询。&#x0A;Query cache 在一些环境是非常有用的，如表很少修改，经常会查询的情况下。 &#x0A;</DESCRIPTION>
+                    <SOLUTION>通过以下命令可以设置query cache的大小：&#x0A;set global query_cache_size = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>数据库所有触发器</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>列出数据库所有的触发器，供管理员分析使用。&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>列出数据库所有的触发器，供管理员分析使用。&#x0A;</DESCRIPTION>
+                    <SOLUTION>分析列表中提到的触发器。</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>数据库所有视图</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>列出数据库所有的视图，供管理员分析使用。</SYNOPSIS>
+                    <DESCRIPTION>列出数据库所有的视图，供管理员分析使用。</DESCRIPTION>
+                    <SOLUTION>分析列表中提到的视图</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>thread_cache_size参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>thread_cache_size 用来缓存空闲的线程，以至不被销毁，如果线程缓存中有空闲线程，这时候如果建立新连接，MYSQL就会很快的响应连接请求。&#x0A;列出thread_cache_size的值，供管理员分析。&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>thread_cache_size 用来缓存空闲的线程，以至不被销毁，如果线程缓存中有空闲线程，这时候如果建立新连接，MYSQL就会很快的响应连接请求。&#x0A;列出thread_cache_size的值，供管理员分析。&#x0A;</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置thread_cache_size的值：&#x0A;set global thread_cache_size = new_value&#x0A;</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>key_buffer_size参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>key_buffer_size指出关键缓存的大小,MySQL使用存储在内存中索引。在内存中缓存存储索引块,以避免重复读取磁盘。key_buffer_size是最重要的一个变量来调整优化MySQL数据库的性能。&#x0A;列出key_buffer_size的值，供管理员分析。</SYNOPSIS>
+                    <DESCRIPTION>key_buffer_size指出关键缓存的大小,MySQL使用存储在内存中索引。在内存中缓存存储索引块,以避免重复读取磁盘。key_buffer_size是最重要的一个变量来调整优化MySQL数据库的性能。&#x0A;列出key_buffer_size的值，供管理员分析。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置key_buffer_size的值：&#x0A;set global key_buffer_size = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>INTERACTIVE_TIMEOUT参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>INTERACTIVE_TIMEOUT参数含义：服务器关闭交互式连接前等待活动的秒数。&#x0A;列出INTERACTIVE_TIMEOUT的值，供管理员分析。&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>INTERACTIVE_TIMEOUT参数含义：服务器关闭交互式连接前等待活动的秒数。&#x0A;列出INTERACTIVE_TIMEOUT的值，供管理员分析。&#x0A;</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置interactive_timeout的值：&#x0A;set global interactive_timeout = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>存在对user表有表级操作权限的用户</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>user表是mysql数据库的重要的数据表之一，表中记录了允许连接到服务器的用户信息。为了安全起见，只有管理员用户才可以对 user 表具有操作权限。</SYNOPSIS>
+                    <DESCRIPTION>user表是mysql数据库的重要的数据表之一，表中记录了允许连接到服务器的用户信息。为了安全起见，只有管理员用户才可以对 user 表具有操作权限。</DESCRIPTION>
+                    <SOLUTION>使用以下命令来撤销用户相应的权限：&#x0A;REVOKE privileges ON user FROM userName</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>CHARACTER_SET_DATABASE参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>CHARACTER_SET_DATABASE参数是指数据库使用的字符集。建议数据库字符集使用UTF-8，方便数据库迁移。</SYNOPSIS>
+                    <DESCRIPTION>CHARACTER_SET_DATABASE参数是指数据库使用的字符集。建议数据库字符集使用UTF-8，方便数据库迁移。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置character_set_database的值：&#x0A;set global character_set_database = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>CHARACTER_SET_SERVER参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>CHARACTER_SET_SERVER参数是指服务器使用的字符集。当数据库字符集没有指定的时候，MySQL就默认使用服务器字符集。建议服务器字符集使用utf8。</SYNOPSIS>
+                    <DESCRIPTION>CHARACTER_SET_SERVER参数是指服务器使用的字符集。当数据库字符集没有指定的时候，MySQL就默认使用服务器字符集。建议服务器字符集使用utf8。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置character_set_server的值：&#x0A;set global character_set_server = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>COLLATION_DATABASE参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>COLLATION_DATABASE参数是指数据库的校对规则。校对规则是在字符集内用于比较字符的一套规则。&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>COLLATION_DATABASE参数是指数据库的校对规则。校对规则是在字符集内用于比较字符的一套规则。&#x0A;</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置collation_database的值：&#x0A;set global collation_database = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>COLLATION_SERVER参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>COLLATION_SERVER参数是指服务器校对规则。校对规则是在字符集内用于比较字符的一套规则。</SYNOPSIS>
+                    <DESCRIPTION>COLLATION_SERVER参数是指服务器校对规则。校对规则是在字符集内用于比较字符的一套规则。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置COLLATION_SERVER的值：&#x0A;set global COLLATION_SERVER = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>FLUSH_TIME参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>FLUSH_TIME参数如果是一个非零的数字，那么每过flush_time秒，所有打开的表将关闭，以释放资源并同步数据至磁盘。这个选项建议仅仅使用在系统内存严重不足的情况下。</SYNOPSIS>
+                    <DESCRIPTION>FLUSH_TIME参数如果是一个非零的数字，那么每过flush_time秒，所有打开的表将关闭，以释放资源并同步数据至磁盘。这个选项建议仅仅使用在系统内存严重不足的情况下。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置FLUSH_TIME的值：&#x0A;set global FLUSH_TIME = new_value&#x0A;</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>hostname参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>BINLOG_CACHE_SIZE参数是指二进制缓存日志的大小，默认为32K。如果经常使用大量、复杂的SQL表达式，则应该加大参数之以获得更高的性能。&#x0A;</SYNOPSIS>
+                    <DESCRIPTION>BINLOG_CACHE_SIZE参数是指二进制缓存日志的大小，默认为32K。如果经常使用大量、复杂的SQL表达式，则应该加大参数之以获得更高的性能。&#x0A;</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置hostname的值：&#x0A;set global hostname = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>CHARACTER_SET_CLIENT参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>CHARACTER_SET_CLIENT参数是指客户端使用的字符集。当客户端向服务器发出请求时，MySQL会把客户端字符集转换为连接字符集。把客户端字符集和连接字符集设置成一致，可以提高效率，避免乱码。</SYNOPSIS>
+                    <DESCRIPTION>CHARACTER_SET_CLIENT参数是指客户端使用的字符集。当客户端向服务器发出请求时，MySQL会把客户端字符集转换为连接字符集。把客户端字符集和连接字符集设置成一致，可以提高效率，避免乱码。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置CHARACTER_SET_CLIENT的值：&#x0A;set global CHARACTER_SET_CLIENT = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>CHARACTER_SET_CONNECTION参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>CHARACTER_SET_CONNECTION参数是指连接过程中使用的字符集。当客户端向服务器发出请求时，MySQL会把客户端字符集转换为连接字符集。把客户端字符集和连接字符集设置成一致，可以提高效率，避免乱码。</SYNOPSIS>
+                    <DESCRIPTION>CHARACTER_SET_CONNECTION参数是指连接过程中使用的字符集。当客户端向服务器发出请求时，MySQL会把客户端字符集转换为连接字符集。把客户端字符集和连接字符集设置成一致，可以提高效率，避免乱码。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置CHARACTER_SET_CONNECTION的值：&#x0A;set global CHARACTER_SET_CONNECTION = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>DELAY_KEY_WRITE参数的设定</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>DELAY_KEY_WRITE参数含义：在表关闭之前，将对表的update操作指跟新数据到磁盘，而不更新索引到磁盘，把对索引的更改记录在内存。在关闭表的时候一起跟新索引到磁盘。&#x0A;列出DELAY_KEY_WRITE的值，供管理员分析。</SYNOPSIS>
+                    <DESCRIPTION>DELAY_KEY_WRITE参数含义：在表关闭之前，将对表的update操作指跟新数据到磁盘，而不更新索引到磁盘，把对索引的更改记录在内存。在关闭表的时候一起跟新索引到磁盘。&#x0A;列出DELAY_KEY_WRITE的值，供管理员分析。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置delay_key_write的值：&#x0A;set global delay_key_write = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>DELAYED_QUEUE_SIZE参数值</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>DELAYED_QUEUE_SIZE参数是指各个表中处理INSERT DELAYED语句时队列中行的数量限制。如果队列满了，执行 INSERT DELAYED 语句的客户端应等待，直到队列内再有空间。</SYNOPSIS>
+                    <DESCRIPTION>DELAYED_QUEUE_SIZE参数是指各个表中处理INSERT DELAYED语句时队列中行的数量限制。如果队列满了，执行 INSERT DELAYED 语句的客户端应等待，直到队列内再有空间。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置DELAYED_QUEUE_SIZE的值：&#x0A;set global DELAYED_QUEUE_SIZE = new_value</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>错误日志路径</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>log_error 参数指定了错误日志的存放路径。数据库系统出现错误时可以通过该路径找到并查看错误日志。</SYNOPSIS>
+                    <DESCRIPTION>log_error 参数指定了错误日志的存放路径。数据库系统出现错误时可以通过该路径找到并查看错误日志。</DESCRIPTION>
+                    <SOLUTION>通过以下的命令可以设置log_error的值：&#x0A;set global DELAYED_QUEUE_SIZE = new_value&#x0A;</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>MySQL数据目录</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>安全信息查看</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>datadir 参数:MySQL数据的存放路径。数据目录下存放了包括数据库、日志等重要的文件。</SYNOPSIS>
+                    <DESCRIPTION>datadir 参数:MySQL数据的存放路径。数据目录下存放了包括数据库、日志等重要的文件。</DESCRIPTION>
+                    <SOLUTION>列出MySQL数据目录，供管理员分析使用。</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+                <VULNERABLITY>
+                    <NAME>Mysql电话号码</NAME>
+                    <NO CNVD="NONE" CVE="NONE" MS="NONE" OTHER="NONE" />
+                    <VULTYPE>敏感信息探测</VULTYPE>
+                    <RISK>信息</RISK>
+                    <SYNOPSIS>列出存储电话号码的表名和字段名</SYNOPSIS>
+                    <DESCRIPTION>列出存储电话号码的表名和字段名</DESCRIPTION>
+                    <SOLUTION>对存储电话号码的字段建议重点关注</SOLUTION>
+                    <VALIDATE />
+                    <REFERENCE />
+                </VULNERABLITY>
+            </DATA>
+        </HOST>
+    </SCANDATA>
+</REPORT>

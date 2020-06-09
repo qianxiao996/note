@@ -1,0 +1,13 @@
+1.首先用vi命令打开文件
+[root@localhost test]# vi test.sh   
+2.在vi命令模式中使用 :set ff 命令
+可以看到改文件的格式为
+复制代码 代码如下:
+fileformat=dos
+
+
+3.修改文件format为unix
+使用vi/vim修改文件format
+命令：:set ff=unix
+或者：:set fileformat=unix
+然后:wq保存退出就可以了

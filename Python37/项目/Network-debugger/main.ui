@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1043</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>网络调试工具 by 浅笑996</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>logo.png</normaloff>logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>601</x>
+      <y>10</y>
+      <width>431</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>IP配置</string>
+    </property>
+    <widget class="QSplitter" name="splitter_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>191</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QSplitter" name="splitter_7">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>本地IP</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>远程IP</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter_5">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLineEdit" name="lip"/>
+      <widget class="QLineEdit" name="rip">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QSplitter" name="splitter_10">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>25</y>
+       <width>121</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QSplitter" name="splitter_8">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>本地端口</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>远程端口</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLineEdit" name="lport"/>
+      <widget class="QLineEdit" name="rport">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QSplitter" name="splitter_11">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>24</y>
+       <width>81</width>
+       <height>73</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QPushButton" name="ltest">
+      <property name="text">
+       <string>测试占用</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="rtest">
+      <property name="text">
+       <string>测试连通</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPlainTextEdit" name="send_data">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>581</width>
+      <height>424</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>9</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Send Data</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="Receive_data">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>480</y>
+      <width>581</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>460</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Receive Data</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>130</y>
+      <width>141</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Connect</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>20</y>
+       <width>111</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="open">
+        <property name="text">
+         <string>开启监听</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="connect">
+        <property name="text">
+         <string>连接远端</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>130</y>
+      <width>141</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Common</string>
+    </property>
+    <widget class="QSplitter" name="splitter_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>48</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>20</y>
+       <width>111</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="2" column="0">
+       <widget class="QPushButton" name="close">
+        <property name="text">
+         <string>关闭连接</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="send">
+        <property name="text">
+         <string>发送数据</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPlainTextEdit" name="debugger">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>270</y>
+      <width>431</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>602</x>
+      <y>248</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Debugger</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>130</y>
+      <width>111</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Agreement</string>
+    </property>
+    <widget class="QSplitter" name="splitter_12">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>31</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QRadioButton" name="radio_tcp">
+      <property name="text">
+       <string>TCP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radio_udp">
+      <property name="text">
+       <string>UDP</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>-650</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter_3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>-650</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter_4">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>-650</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter_6">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>-650</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <tabstops>
+  <tabstop>lip</tabstop>
+  <tabstop>lport</tabstop>
+  <tabstop>ltest</tabstop>
+  <tabstop>rip</tabstop>
+  <tabstop>rport</tabstop>
+  <tabstop>rtest</tabstop>
+  <tabstop>send_data</tabstop>
+  <tabstop>radio_tcp</tabstop>
+  <tabstop>radio_udp</tabstop>
+  <tabstop>open</tabstop>
+  <tabstop>connect</tabstop>
+  <tabstop>send</tabstop>
+  <tabstop>close</tabstop>
+  <tabstop>Receive_data</tabstop>
+  <tabstop>debugger</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

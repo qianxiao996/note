@@ -1,0 +1,27 @@
+F:\编程代码\C#\Windows Privilege Promotion Query\bin\Debug\Windows Privilege Promotion Query.exe.config
+F:\编程代码\C#\Windows Privilege Promotion Query\bin\Debug\Windows Privilege Promotion Query.exe
+F:\编程代码\C#\Windows Privilege Promotion Query\bin\Debug\Windows Privilege Promotion Query.pdb
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows_Privilege_Promotion_Query.Form1.resources
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows_Privilege_Promotion_Query.Properties.Resources.resources
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.csproj.GenerateResource.cache
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.csproj.CoreCompileInputs.cache
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.exe
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.pdb
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows_Privilege_Promotion_Query.Form2.resources
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows_Privilege_Promotion_Query.Form3.resources
+F:\编程代码\C#\Windows Privilege Promotion Query\bin\Debug\SharpCompress.dll
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.csproj.CopyComplete
+F:\编程代码\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.csprojAssemblyReference.cache
+D:\code\C#\Windows Privilege Promotion Query\bin\Debug\Windows Privilege Promotion Query.exe.config
+D:\code\C#\Windows Privilege Promotion Query\bin\Debug\Windows Privilege Promotion Query.exe
+D:\code\C#\Windows Privilege Promotion Query\bin\Debug\Windows Privilege Promotion Query.pdb
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.csprojAssemblyReference.cache
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows_Privilege_Promotion_Query.Form1.resources
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows_Privilege_Promotion_Query.Form2.resources
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows_Privilege_Promotion_Query.Form3.resources
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows_Privilege_Promotion_Query.Properties.Resources.resources
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.csproj.GenerateResource.cache
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.csproj.CoreCompileInputs.cache
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.csproj.CopyComplete
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.exe
+D:\code\C#\Windows Privilege Promotion Query\obj\Debug\Windows Privilege Promotion Query.pdb
